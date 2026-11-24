@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi lista interactiva de tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    button, input, select {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    li {
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi lista interactiva de tareas</h1>
+  <p>Agrega actividades y organízalas por prioridad.</p>
+
+  <form id="formTarea">
+    <input id="descripcion" type="text"
+           placeholder="Escribe una tarea" required>
+
+    <select id="prioridad">
+      <option value="Alta">Alta</option>
+      <option value="Media">Media</option>
+      <option value="Baja">Baja</option>
+    </select>
+
+    <button type="submit">Agregar tarea</button>
+  </form>
+
+  <h2>Mis tareas</h2>
+  <ul id="listaTareas"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
